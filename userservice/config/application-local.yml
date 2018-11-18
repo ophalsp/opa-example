@@ -1,0 +1,13 @@
+management.security.enabled: false
+
+#Metrics related configurations
+management.endpoint.metrics.enabled: true
+#management.endpoints.web.exposure.include: '*'
+management.endpoint.prometheus.enabled: true
+management.metrics.export.prometheus.enabled: true
+
+spring:
+  application.name: "OPA's user service"
+
+company.tothepoint.opa:
+  opa-url: http://localhost:8181/v1/data/http/users/authz

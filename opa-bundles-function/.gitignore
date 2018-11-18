@@ -1,0 +1,4 @@
+.credentials
+*.log
+
+node_modules

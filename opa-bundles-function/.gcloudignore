@@ -1,0 +1,13 @@
+.gcloudignore
+.credentials
+.gitignore
+
+
+*.log
+yarn.lock
+
+deploy_function.sh
+remove_function.sh
+
+test
+node_modules

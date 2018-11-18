@@ -1,0 +1,24 @@
+//PETER OPHALS
+//JWT SAMPLE BODY
+{
+  "userid":"7c352a3b-9c53-41cc-8133-b60197ff1d3a",
+  "username": "ophalpe",
+  "name": "Peter Ophals",
+  "role": "ADMIN"
+}
+//TOKEN
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyaWQiOiI3YzM1MmEzYi05YzUzLTQxY2MtODEzMy1iNjAxOTdmZjFkM2EiLCJ1c2VybmFtZSI6Im9waGFscGUiLCJuYW1lIjoiUGV0ZXIgT3BoYWxzIiwicm9sZSI6IkFETUlOIn0.z8mMkexnffLO5NXzk7_QjdD2L2EFmzqEwF99uvMteCo
+
+//-----------------------------------------------------------------------------------------------------------------//
+
+//EDDIE MURPHIE
+//JWT SAMPLE BODY
+{
+  "userid":"1731b7dd-aa04-4592-bd41-5eae70929e27",
+  "username": "murphed",
+  "name": "EDDIE MURPHY",
+  "role": "USER"
+}
+//TOKEN
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyaWQiOiIxNzMxYjdkZC1hYTA0LTQ1OTItYmQ0MS01ZWFlNzA5MjllMjciLCJ1c2VybmFtZSI6Im11cnBoZWQiLCJuYW1lIjoiRURESUUgTVVSUEhZIiwicm9sZSI6IlVTRVIifQ.O1fzV4Brp14AYFsVt0k5fYp1IKlomV9fOUiTfJZ4MK0
+//-----------------------------------------------------------------------------------------------------------------//

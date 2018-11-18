@@ -1,0 +1,12 @@
+services:
+  - name: bundle-server-service
+    url: https://europe-west1-opaexample.cloudfunctions.net/opaBundleServer
+
+bundle:
+  name: users
+  service: bundle-server-service
+  polling:
+    min_delay_seconds: 60
+    max_delay_seconds: 120
+
+default_decision: /http/users/authz/deny
