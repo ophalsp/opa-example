@@ -33,7 +33,7 @@ metadata:
   name: opa-configmap-modifier
 roleRef:
   kind: Role
-  name: configmap-modifier
+  name: configmap-modifier-role
   apiGroup: rbac.authorization.k8s.io
 subjects:
 - kind: Group
@@ -92,10 +92,13 @@ spec:
           mountPath: /certs
           name: opa-server
       - name: kube-mgmt
-        image: openpolicyagent/kube-mgmt:0.6
+        image: openpolicyagent/kube-mgmt:0.7
         args:
         - "--replicate-cluster=v1/namespaces"
         - "--replicate=extensions/v1beta1/ingresses"
+        - "--replicate=apps/v1beta1/deployments"
+        - "--replicate=extensions/v1beta1/deployments"
+        - "--replicate=v1/services"
       volumes:
       - name: opa-server
         secret:
