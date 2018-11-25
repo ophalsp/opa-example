@@ -96,7 +96,8 @@ spec:
         args:
         - "--replicate-cluster=v1/namespaces"
         - "--replicate=extensions/v1beta1/ingresses"
-        - "--replicate=apps/v1beta1/deployments"
+        - "--replicate=apps/v1/deployments"
+        - "--replicate=v1/pods"
         - "--replicate=extensions/v1beta1/deployments"
         - "--replicate=v1/services"
       volumes:

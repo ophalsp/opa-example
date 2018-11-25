@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-good
+  labels:
+    type: deps
+    context: opa
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      type: deps
+      context: opa
+  template:
+    metadata:
+      labels:
+        type: deps
+        context: opa
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:1.10

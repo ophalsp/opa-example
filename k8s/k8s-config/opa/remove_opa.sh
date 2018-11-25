@@ -6,6 +6,8 @@ rm -f .secrets/*.*
 
 kubectl delete -f opa.yml -n opa
 
+kubectl delete -f webhook.yml
+
 kubectl delete secret opa-server -n opa
 
 kubectl delete ns opa

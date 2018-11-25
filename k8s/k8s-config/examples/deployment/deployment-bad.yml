@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-bad-everything
+  labels:
+    type: bad
+    context: bad
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      type: bad
+      context: bad
+  template:
+    metadata:
+      labels:
+        type: bad
+        context: bad
+    spec:
+      containers:
+      - name: nginx
+        image: not-nginx:1.10
