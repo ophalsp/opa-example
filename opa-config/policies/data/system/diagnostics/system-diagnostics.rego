@@ -1,5 +1,5 @@
 package system.diagnostics
 
-config = {"mode": "on"} {
+config = {"mode": "all"} {
   input.method = "POST"
 }

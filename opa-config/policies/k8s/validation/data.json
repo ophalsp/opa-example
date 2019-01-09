@@ -1,0 +1,21 @@
+{
+  "allowed" : {
+    "kinds": [
+      {
+        "id": "Deployment",
+        "imagePrefix": "nginx",
+        "labels": {
+             "type" : "deps",
+             "context": "opa"
+        }
+      },
+      {
+        "id": "StatefulSet",
+        "imagePrefix": "nginx",
+        "labels": {
+          "type" : "stats"
+        }
+      }
+    ]
+  }
+}
